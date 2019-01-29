@@ -9,6 +9,7 @@ connect_db = mysql.connect(
                            passwd =  config.db_passwd,
                            db     =  config.db_name ,
                            host   =  config.db_host,
+                           port   =  config.db_port,
                            charset=  "utf8" )
 cur = connect_db.cursor()
 
