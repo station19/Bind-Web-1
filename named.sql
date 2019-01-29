@@ -37,8 +37,8 @@ CREATE TABLE `dns_records` (
   `expire` int(11) NOT NULL DEFAULT '86400',
   `minimum` int(11) NOT NULL DEFAULT '86400',
   `serial` bigint(20) NOT NULL DEFAULT '2015050917',
-  `resp_person` varchar(64) NOT NULL DEFAULT 'ddns.net',
-  `primary_ns` varchar(64) NOT NULL DEFAULT 'ns.ddns.net.',
+  `resp_person` varchar(64) NOT NULL DEFAULT 'niubi.org',
+  `primary_ns` varchar(64) NOT NULL DEFAULT 'ns.niubi.org.',
   PRIMARY KEY (`id`),
   KEY `type` (`type`),
   KEY `host` (`host`),
@@ -83,7 +83,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (87,'laowang','老王','12fe31d801a521149d338101fe938649','13725578011','112@qq.com',0,0),(88,'eagle','老鹰','12fe31d801a521149d338101fe938649','13725571111','1112@qq.com',0,0);
+INSERT INTO `user` VALUES (87,'admin','admin','12fe31d801a521149d338101fe938649','13800138000','123@qq.com',0,0),(88,'test','test','12fe31d801a521149d338101fe938649','13800138000','123@qq.com',0,0);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -96,4 +96,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-16 17:29:47
+-- Dump completed on 2019-01-16 13:22:43
